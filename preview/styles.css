@@ -295,3 +295,24 @@ strong { color: var(--ink); }
 @media (max-width: 720px) {
   .topic-bottom { padding: 25px 22px; }
 }
+
+
+/* v8: same footer tone across Quarto and standalone preview */
+#quarto-footer, #quarto-footer .nav-footer, #quarto-footer .nav-footer-left,
+#quarto-footer .nav-footer-center, #quarto-footer .nav-footer-right,
+footer.footer, .nav-footer, .preview-footer { background: var(--paper) !important; background-color: var(--paper) !important; }
+#education { border-bottom: 0 !important; }
+#education .cv-entry, #education .cv-entry + .cv-entry { border: 0 !important; }
+#education .cv-entry + .cv-entry { padding-top: 16px; }
+.hero-name { white-space: nowrap; }
+.photo-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 20px; align-items: start; }
+.photo-gallery .photo-feature { margin: 0; min-width: 0; max-width: none; }
+.photo-gallery .photo-feature a { display: block; overflow: hidden; border-radius: 6px; }
+.photo-gallery .photo-feature img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; max-height: none; object-fit: cover; object-position: center; border-radius: 6px; box-shadow: none; }
+.photo-gallery .photo-feature figcaption { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding-top: 10px; }
+.photo-gallery .photo-feature figcaption strong { font-size: .93rem; }
+.photo-gallery .photo-feature figcaption span { font-size: .79rem; }
+.photo-placeholder { aspect-ratio: 4 / 3; min-width: 0; border: 1px dashed #c8d7d3; border-radius: 6px; background: #eef1ec; color: #75908e; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 12px; text-align: center; font-size: .80rem; }
+.photo-placeholder-icon { font-size: 2rem; font-weight: 300; line-height: 1; }
+@media (max-width: 860px) { .photo-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; } }
+@media (max-width: 480px) { .photo-gallery { gap: 14px 10px; } .photo-placeholder { font-size: .72rem; } .photo-gallery .photo-feature figcaption span { font-size: .73rem; } }
