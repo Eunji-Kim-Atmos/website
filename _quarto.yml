@@ -13,7 +13,6 @@ project:
     - photos.qmd
 
 website:
-  title: "Eunji Kim"
   description: "Eunji Kim | Ph.D. Candidate at Ulsan National Institute of Science and Technology | Tropical cyclone rainfall and seasonal prediction"
   favicon: images/favicon.svg
   navbar:
