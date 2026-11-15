@@ -404,3 +404,27 @@ footer.footer .nav-footer { border-top: 0 !important; }
     font-size: clamp(2.25rem, 8.5vw, 3.15rem);
   }
 }
+
+/* v12: uniform conference-year accordion row geometry */
+.about-page .presentation-years .presentation-year > summary {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 84px;
+  min-height: 84px;
+  padding: 0 2px;
+  margin: 0;
+  align-items: center;
+  gap: 14px;
+  line-height: 1.2;
+}
+.about-page .presentation-years .presentation-year-label,
+.about-page .presentation-years .presentation-count { line-height: 1.2; margin: 0; }
+.about-page .presentation-years .presentation-count { white-space: nowrap; }
+@media (max-width: 720px) {
+  .about-page .presentation-years .presentation-year > summary {
+    height: 76px;
+    min-height: 76px;
+    padding: 0 2px;
+  }
+}
