@@ -374,3 +374,33 @@ footer.footer .nav-footer { border-top: 0 !important; }
   .contact-entry { flex-direction: column; gap: 3px; }
   .contact-type { width: auto; }
 }
+
+
+/* v11: consistent academic timeline separators and refined typography */
+/* Match the thin divider between academic visits in Education. */
+.about-page #education .cv-items .cv-entry + .cv-entry {
+  border-top: 1px solid var(--border) !important;
+  padding-top: 23px !important;
+}
+/* Top-left site name, shared across all pages. */
+#quarto-header .navbar-brand,
+.navbar .navbar-brand {
+  font-size: 1.43rem !important;
+  font-weight: 760;
+  letter-spacing: -.045em;
+}
+/* Interior page titles only, not the home introduction. */
+.page-hero h1 {
+  font-size: clamp(2.65rem, 4.9vw, 4.05rem);
+  line-height: 1.09;
+  letter-spacing: -.045em;
+}
+@media (max-width: 720px) {
+  #quarto-header .navbar-brand,
+  .navbar .navbar-brand {
+    font-size: 1.30rem !important;
+  }
+  .page-hero h1 {
+    font-size: clamp(2.25rem, 8.5vw, 3.15rem);
+  }
+}
