@@ -8,7 +8,7 @@ title-block-style: none
 ```{=html}
 <div role="main">
 <div class="site-container page-shell about-page">
-<header class="page-hero"><div class="kicker">Personal &amp; academic background</div><h1>About me</h1></header>
+<header class="page-hero"><div class="kicker">Personal &amp; academic background</div><h1>About Me</h1></header>
 <div class="about-sections">
 <section class="cv-section" id="education">
   <h2>Education</h2>
