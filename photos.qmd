@@ -1,5 +1,6 @@
 ---
 title: "Photos | Eunji Kim"
+pagetitle: "Photos | Eunji Kim"
 page-layout: custom
 title-block-style: none
 ---
