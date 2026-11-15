@@ -210,6 +210,13 @@ title-block-style: none
     </div>
   </div>
 </section>
+<section class="cv-section" id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">Contact</h2>
+  <div class="contact-details">
+    <div class="contact-entry"><span class="contact-type">UNIST email</span><a href="mailto:hahahh@unist.ac.kr">hahahh@unist.ac.kr</a></div>
+    <div class="contact-entry"><span class="contact-type">Personal email</span><a href="mailto:yoseop1210@gmail.com">yoseop1210@gmail.com</a></div>
+  </div>
+</section>
 </div>
 <section class="cv-download" aria-labelledby="cv-download-title"><div><div class="kicker">Curriculum vitae</div><h2 id="cv-download-title">Download my CV</h2><p>A PDF version of my CV will be available here once my academic details have been finalized.</p></div><span class="cv-unavailable" aria-label="CV download not yet available">CV PDF · Coming soon</span></section>
 <!-- When the real CV is provided: put files/Eunji_Kim_CV.pdf in the project, then replace the span above with:
