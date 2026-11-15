@@ -529,3 +529,16 @@ footer.footer .nav-footer { border-top: 0 !important; }
     display: none;
   }
 }
+
+/* v15: more prominent left-side headings in the About Me CV sections */
+.about-page .cv-section > h2 {
+  font-size: 1.32rem !important;
+  font-weight: 760 !important;
+  line-height: 1.35;
+  letter-spacing: -.035em;
+}
+@media (max-width: 720px) {
+  .about-page .cv-section > h2 {
+    font-size: 1.22rem !important;
+  }
+}
