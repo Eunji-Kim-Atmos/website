@@ -1,0 +1,27 @@
+---
+title: "Home | Eunji Kim"
+page-layout: custom
+title-block-style: none
+---
+
+```{=html}
+<div role="main">
+<div class="site-container hero-only">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <h1 id="hero-title">Hello, I'm <span class="hero-name">Eunji Kim</span></h1>
+    <p class="hero-description">I am a <strong>Ph.D. Candidate</strong> in the <strong>Department of Civil, Urban, Earth, and Environmental Engineering</strong> at <strong>Ulsan National Institute of Science and Technology (UNIST)</strong>, where I conduct my doctoral research under the supervision of <strong>Professor Dong-Hyun Cha</strong>.</p>
+    <p class="hero-description">My research focuses on <strong>tropical cyclones and their associated rainfall</strong> over the western North Pacific, with particular interests in subseasonal-to-seasonal prediction, global climate model evaluation, and regional atmospheric modeling. I explore how large-scale environmental conditions influence tropical cyclone activity and how numerical simulations can better represent tropical cyclone rainfall.</p>
+    <div class="hero-actions">
+      <a class="btn-primary-site" href="research.html">Explore my research <span aria-hidden="true">↗</span></a>
+      <a class="btn-secondary-site" href="about.html">About me <span aria-hidden="true">→</span></a>
+      <a class="btn-scholar-site" href="https://scholar.google.com/citations?user=w1ew_qMAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" aria-label="Open Eunji Kim's Google Scholar profile (opens in a new tab)">Google Scholar <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="visual-frame profile-frame"><img src="images/eunji-profile.jpg" alt="Eunji Kim smiling outdoors with mountains behind her" width="700" height="755" fetchpriority="high"></div>
+  </div>
+</section>
+</div>
+</div>
+```

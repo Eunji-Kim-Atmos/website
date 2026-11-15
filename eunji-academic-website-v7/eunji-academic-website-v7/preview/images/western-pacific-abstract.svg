@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 740" role="img" aria-labelledby="title desc">
+<title id="title">Western North Pacific — conceptual illustration</title>
+<desc id="desc">Abstract gridded ocean with an illustrative spiral and cyclone track, not observed or simulated data.</desc>
+<defs>
+  <linearGradient id="water" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dce9e6"/><stop offset="1" stop-color="#bfd5d2"/></linearGradient>
+  <linearGradient id="path" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#356e80"/><stop offset="1" stop-color="#7aa4a0"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#f6faf5" stop-opacity=".7"/><stop offset="1" stop-color="#f6faf5" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#7ba4a7" opacity=".27"/></pattern>
+</defs>
+<rect width="640" height="740" fill="url(#water)"/>
+<rect width="640" height="740" fill="url(#dots)"/>
+<g stroke="#eaf4f1" stroke-width="1.5" opacity=".65" fill="none">
+  <path d="M0 150H640M0 260H640M0 370H640M0 480H640M0 590H640"/>
+  <path d="M80 0V740M195 0V740M310 0V740M425 0V740M540 0V740"/>
+</g>
+<g fill="#edf3e9" stroke="#b0c6c1" stroke-width="2" opacity=".95">
+  <path d="M-20 -10 L120 -10 Q135 20 126 58 L142 111 120 166 140 199 112 223 95 264 68 284 57 333 39 346 28 403 0 429 Z"/>
+  <path d="M107 393 Q135 373 145 397 L156 426 145 456 153 479 139 514 124 497 111 448 Z"/>
+  <path d="M176 561 Q195 554 202 573 L198 602 181 619 170 600 Z"/>
+  <path d="M455 0 L650 0 650 75 Q600 84 575 67 520 44 484 65 L475 36 Z"/>
+</g>
+<g fill="none" stroke="#6e999c" stroke-width="1.5" opacity=".85">
+  <path d="M408 145 C 497 157, 542 236, 533 333 C521 434 460 492 365 496 C265 501 200 414 216 325 C230 247 305 210 378 222 C437 232 467 286 452 346 C438 407 373 434 324 409 C280 388 267 331 294 293 C319 255 367 254 394 283 C416 306 410 342 386 356 C365 367 343 354 340 336"/>
+  <path d="M403 112 C 525 120 582 212 579 329 C571 475 480 540 353 541 C225 542 151 445 161 325" opacity=".43"/>
+  <path d="M437 188 C 473 232 493 280 485 344" opacity=".42"/>
+</g>
+<circle cx="356" cy="324" r="150" fill="url(#glow)"/>
+<g stroke="url(#path)" stroke-width="4.4" fill="none" stroke-linecap="round">
+ <path d="M122 640 C193 610 251 577 267 522 S277 435 319 400 387 344 355 324" stroke-dasharray="12 11"/>
+</g>
+<g fill="#f8faf7" stroke="#376779" stroke-width="3"><circle cx="122" cy="640" r="8"/><circle cx="265" cy="524" r="7"/><circle cx="319" cy="400" r="7"/><circle cx="355" cy="324" r="10"/></g>
+<g font-family="Arial,sans-serif" fill="#4e7c82" font-size="13" letter-spacing="2"><text x="33" y="60">WESTERN NORTH PACIFIC</text><text x="38" y="708">100°E</text><text x="517" y="708">180°E</text><text x="556" y="128">40°N</text><text x="556" y="600">10°N</text></g>
+<rect x="33" y="33" width="13" height="2" fill="#507f86"/>
+</svg>
