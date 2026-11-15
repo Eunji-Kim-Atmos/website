@@ -428,3 +428,44 @@ footer.footer .nav-footer { border-top: 0 !important; }
     padding: 0 2px;
   }
 }
+
+
+/* v13: align About Me header spacing with other interior pages */
+.about-page .page-hero {
+  padding-bottom: 45px;
+  margin-bottom: 48px;
+}
+@media (max-width: 720px) {
+  .about-page .page-hero {
+    padding-bottom: 34px;
+    margin-bottom: 25px;
+  }
+}
+
+/* v13: remove the extra final-year border and normalize year row boxes */
+.about-page .presentation-years .presentation-year {
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-top: 1px solid var(--border);
+  border-bottom: none !important;
+}
+.about-page .presentation-years {
+  border-bottom: 1px solid var(--border);
+}
+.about-page .presentation-years .presentation-year > summary {
+  height: 84px;
+  min-height: 84px;
+  max-height: 84px;
+  margin: 0;
+  padding: 0 2px;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media (max-width: 720px) {
+  .about-page .presentation-years .presentation-year > summary {
+    height: 76px;
+    min-height: 76px;
+    max-height: 76px;
+  }
+}
