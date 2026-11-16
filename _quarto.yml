@@ -42,7 +42,7 @@ website:
 format:
   html:
     theme: cosmo
-    css: site-theme-v18.css
+    css: site-theme-v19.css
     toc: false
     smooth-scroll: true
     link-external-newwindow: true
