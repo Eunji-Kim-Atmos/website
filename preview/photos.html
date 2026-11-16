@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Eunji Kim — Ph.D. Candidate at UNIST researching tropical cyclone rainfall and climate prediction"><title>Photos | Eunji Kim</title><link rel="stylesheet" href="site-theme-v15.css"><link rel="icon" type="image/svg+xml" href="images/favicon.svg"></head><body><nav class="navbar" aria-label="Main navigation"><div class="site-container nav-preview-inner"><a class="navbar-brand" href="index.html">Eunji Kim</a><button class="mobile-nav-button" type="button" aria-expanded="false" aria-controls="preview-links" aria-label="Toggle navigation">☰</button><div class="preview-links" id="preview-links"><a class="" href="index.html">Home</a><a class="" href="about.html">About Me</a><a class="" href="research.html">Research</a><a class="" href="publications.html">Publications</a><a class="active" href="photos.html">Photos</a></div></div></nav><main id="main-content">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Eunji Kim — Ph.D. Candidate at UNIST researching tropical cyclone rainfall and climate prediction"><title>Photos | Eunji Kim</title><link rel="stylesheet" href="site-theme-v16.css"><link rel="icon" type="image/svg+xml" href="images/favicon.svg"></head><body><nav class="navbar" aria-label="Main navigation"><div class="site-container nav-preview-inner"><a class="navbar-brand" href="index.html">Eunji Kim</a><button class="mobile-nav-button" type="button" aria-expanded="false" aria-controls="preview-links" aria-label="Toggle navigation">☰</button><div class="preview-links" id="preview-links"><a class="" href="index.html">Home</a><a class="" href="about.html">About Me</a><a class="" href="research.html">Research</a><a class="" href="publications.html">Publications</a><a class="active" href="photos.html">Photos</a></div></div></nav><main id="main-content">
 <div class="site-container page-shell">
 <header class="page-hero"><div class="kicker">Beyond the lab</div><h1>Photos</h1></header>
 <section class="photo-gallery" aria-label="Photo gallery">
-<figure class="photo-feature"><a href="images/eunji-photo-original.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size Garden of the Gods photo"><img src="images/eunji-photo-original.jpg" alt="Eunji Kim at Garden of the Gods in Colorado Springs" width="2048" height="1535" loading="lazy"></a><figcaption><strong>Garden of the Gods</strong><span>Colorado Springs, USA · Feb 2026</span></figcaption></figure>
-<div class="photo-placeholder" aria-label="Photo slot 2 — image to be added later"><span class="photo-placeholder-icon" aria-hidden="true">+</span><span>Photo coming soon</span></div>
-<div class="photo-placeholder" aria-label="Photo slot 3 — image to be added later"><span class="photo-placeholder-icon" aria-hidden="true">+</span><span>Photo coming soon</span></div>
-<div class="photo-placeholder" aria-label="Photo slot 4 — image to be added later"><span class="photo-placeholder-icon" aria-hidden="true">+</span><span>Photo coming soon</span></div>
-<div class="photo-placeholder" aria-label="Photo slot 5 — image to be added later"><span class="photo-placeholder-icon" aria-hidden="true">+</span><span>Photo coming soon</span></div>
-<div class="photo-placeholder" aria-label="Photo slot 6 — image to be added later"><span class="photo-placeholder-icon" aria-hidden="true">+</span><span>Photo coming soon</span></div>
+  <figure class="photo-feature">
+    <button class="photo-open" type="button" data-photo-src="images/eunji-photo-original.jpg" aria-label="View Garden of the Gods photograph">
+      <img src="images/eunji-photo-original.jpg" alt="Eunji Kim at Garden of the Gods in Colorado Springs" width="2048" height="1535" loading="lazy">
+    </button>
+    <figcaption><strong>Garden of the Gods</strong><span>Colorado Springs, USA · Feb 2026</span></figcaption>
+  </figure>
+  <figure class="photo-feature">
+    <button class="photo-open" type="button" data-photo-src="images/first-conference-2019.avif" aria-label="View 첫 학회 photograph">
+      <img src="images/first-conference-2019.avif" alt="AMS 18th Conference on Mesoscale Processes program and conference badge" width="512" height="683" loading="lazy">
+    </button>
+    <figcaption><strong>첫 학회</strong><span>18th Conference on Mesoscale Processes · Savannah, GA, USA · July 29, 2019</span></figcaption>
+  </figure>
+  <div class="photo-placeholder" aria-label="Photo slot 3 — image to be added later"><span class="photo-placeholder-icon" aria-hidden="true">+</span><span>Photo coming soon</span></div>
+  <div class="photo-placeholder" aria-label="Photo slot 4 — image to be added later"><span class="photo-placeholder-icon" aria-hidden="true">+</span><span>Photo coming soon</span></div>
+  <div class="photo-placeholder" aria-label="Photo slot 5 — image to be added later"><span class="photo-placeholder-icon" aria-hidden="true">+</span><span>Photo coming soon</span></div>
+  <div class="photo-placeholder" aria-label="Photo slot 6 — image to be added later"><span class="photo-placeholder-icon" aria-hidden="true">+</span><span>Photo coming soon</span></div>
 </section>
+<dialog class="photo-lightbox" aria-label="Enlarged photograph">
+  <button type="button" class="photo-lightbox-close" aria-label="Close photograph">×</button>
+  <figure>
+    <img class="photo-lightbox-image" alt="">
+    <figcaption class="photo-lightbox-caption">
+      <strong class="photo-lightbox-title"></strong>
+      <span class="photo-lightbox-detail"></span>
+    </figcaption>
+  </figure>
+</dialog>
+<script>
+(function () {
+  const dialog = document.querySelector('.photo-lightbox');
+  if (!dialog) return;
+  const fullImage = dialog.querySelector('.photo-lightbox-image');
+  const title = dialog.querySelector('.photo-lightbox-title');
+  const detail = dialog.querySelector('.photo-lightbox-detail');
+  document.querySelectorAll('.photo-open').forEach(function (button) {
+    button.addEventListener('click', function () {
+      const figure = button.closest('figure');
+      fullImage.src = button.getAttribute('data-photo-src');
+      fullImage.alt = button.querySelector('img').alt;
+      title.textContent = figure.querySelector('figcaption strong').textContent;
+      detail.textContent = figure.querySelector('figcaption span').textContent;
+      dialog.showModal();
+    });
+  });
+  dialog.querySelector('.photo-lightbox-close').addEventListener('click', function () { dialog.close(); });
+  dialog.addEventListener('click', function (event) { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('close', function () { fullImage.removeAttribute('src'); });
+}());
+</script>
 
 </div></main><footer class="preview-footer site-container"><span>© 2026 Eunji Kim</span><span>Built with Quarto · Hosted on GitHub Pages</span></footer><script>const b=document.querySelector('.mobile-nav-button');const links=document.querySelector('.preview-links');b.addEventListener('click',()=>{const open=links.classList.toggle('open');b.setAttribute('aria-expanded',String(open));});</script></body></html>
