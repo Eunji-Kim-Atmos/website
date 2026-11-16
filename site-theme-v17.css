@@ -580,3 +580,39 @@ footer.footer .nav-footer { border-top: 0 !important; }
 @media (prefers-reduced-motion: reduce) {
   .photo-gallery .photo-feature .photo-open img { transition:none; }
 }
+
+/* v17: transparent, frameless photo viewer */
+dialog.photo-lightbox {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #f8f7f3;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 10px 12px 18px;
+  width: min(96vw, 1060px);
+  max-height: 96dvh;
+}
+dialog.photo-lightbox::backdrop { background: rgba(10, 20, 30, .88); }
+dialog.photo-lightbox figure,
+dialog.photo-lightbox figcaption {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+dialog.photo-lightbox .photo-lightbox-image { max-height: calc(96dvh - 112px); }
+dialog.photo-lightbox .photo-lightbox-caption { color: rgba(255,255,255,.80) !important; }
+dialog.photo-lightbox .photo-lightbox-caption strong { color: #ffffff !important; }
+dialog.photo-lightbox .photo-lightbox-close {
+  background: rgba(255,255,255,.15) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255,255,255,.20) !important;
+  margin-bottom: 8px;
+}
+dialog.photo-lightbox .photo-lightbox-close:hover { background: rgba(255,255,255,.28) !important; }
+dialog.photo-lightbox .photo-lightbox-close:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+@media (max-width: 720px) {
+  dialog.photo-lightbox { padding: 7px 5px 12px; }
+}
