@@ -17,10 +17,10 @@ title-block-style: none
     <figcaption><strong>Garden of the Gods</strong><span>Colorado Springs, USA · Feb 2026</span></figcaption>
   </figure>
   <figure class="photo-feature">
-    <button class="photo-open" type="button" data-photo-src="images/first-conference-2019.avif" aria-label="View 첫 학회 photograph">
+    <button class="photo-open" type="button" data-photo-src="images/first-conference-2019.avif" aria-label="View My First Conference photograph">
       <img src="images/first-conference-2019.avif" alt="AMS 18th Conference on Mesoscale Processes program and conference badge" width="512" height="683" loading="lazy">
     </button>
-    <figcaption><strong>첫 학회</strong><span>18th Conference on Mesoscale Processes · Savannah, GA, USA · July 29, 2019</span></figcaption>
+    <figcaption><strong>My First Conference</strong><span>18th Conference on Mesoscale Processes · Savannah, GA, USA · July 29, 2019</span></figcaption>
   </figure>
   <div class="photo-placeholder" aria-label="Photo slot 3 — image to be added later"><span class="photo-placeholder-icon" aria-hidden="true">+</span><span>Photo coming soon</span></div>
   <div class="photo-placeholder" aria-label="Photo slot 4 — image to be added later"><span class="photo-placeholder-icon" aria-hidden="true">+</span><span>Photo coming soon</span></div>
