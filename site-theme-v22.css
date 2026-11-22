@@ -863,3 +863,23 @@ dialog.photo-lightbox .photo-lightbox-close::after {
     padding-left: 11px !important;
   }
 }
+
+
+/* v22: narrower, consistently centered academic website */
+.site-container {
+  width: min(1040px, calc(100% - 64px));
+  margin-inline: auto;
+}
+@media (min-width: 992px) {
+  #quarto-header .navbar {
+    padding-left: max(32px, calc((100vw - 1040px) / 2));
+    padding-right: max(32px, calc((100vw - 1040px) / 2));
+  }
+}
+#quarto-footer .nav-footer,
+.nav-footer {
+  max-width: 1040px;
+}
+@media (max-width: 720px) {
+  .site-container { width: calc(100% - 36px); }
+}
