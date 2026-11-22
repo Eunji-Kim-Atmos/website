@@ -883,3 +883,23 @@ dialog.photo-lightbox .photo-lightbox-close::after {
 @media (max-width: 720px) {
   .site-container { width: calc(100% - 36px); }
 }
+
+/* v23: reduce Home headline size to fit the full name */
+.hero-only .hero h1 {
+  font-size: clamp(2.3rem, 3.8vw, 3.65rem);
+  line-height: 1.14;
+  letter-spacing: -.058em;
+}
+.hero-only .hero-name {
+  white-space: nowrap;
+}
+@media (max-width: 720px) {
+  .hero-only .hero h1 {
+    font-size: clamp(2.15rem, 7.5vw, 3rem);
+  }
+}
+@media (max-width: 400px) {
+  .hero-only .hero h1 {
+    font-size: clamp(2rem, 7.2vw, 2.45rem);
+  }
+}
