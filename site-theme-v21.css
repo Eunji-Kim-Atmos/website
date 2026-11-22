@@ -837,3 +837,29 @@ dialog.photo-lightbox .photo-lightbox-close::after {
   .about-page .presentation-item { padding: 12px 3px; }
   .about-page .cv-download { flex-wrap: wrap; }
 }
+
+/* v21: distinguish About Me section labels from the CV content */
+.about-page .cv-section > h2 {
+  color: #356e77 !important;
+  font-size: .98rem !important;
+  font-weight: 800 !important;
+  line-height: 1.45;
+  letter-spacing: .075em;
+  text-transform: uppercase;
+  border-left: 3px solid #86ada9 !important;
+  border-bottom: none !important;
+  padding: 0 0 0 12px !important;
+  margin: 2px 0 0;
+  align-self: start;
+}
+.about-page .cv-items .cv-entry h3 {
+  color: var(--navy) !important;
+  letter-spacing: -.025em;
+}
+@media (max-width: 720px) {
+  .about-page .cv-section > h2 {
+    font-size: .93rem !important;
+    margin: 0 0 15px;
+    padding-left: 11px !important;
+  }
+}
