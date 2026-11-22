@@ -694,3 +694,146 @@ dialog.photo-lightbox .photo-lightbox-close::before {
 dialog.photo-lightbox .photo-lightbox-close::after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+
+/* v20: smaller, balanced main-content typography; navbar deliberately unchanged */
+.page-shell {
+  font-size: .94rem;
+  padding-top: 68px;
+  padding-bottom: 78px;
+}
+.page-hero { padding-bottom: 34px; margin-bottom: 34px; }
+.page-hero h1 {
+  font-size: clamp(2.45rem, 4.35vw, 3.65rem);
+  line-height: 1.1;
+  margin-top: 16px;
+}
+.page-hero .kicker { font-size: .71rem; }
+.hero-only .hero { padding-top: 54px; padding-bottom: 66px; }
+.hero-only .hero h1 { font-size: clamp(2.85rem, 4.6vw, 4.55rem); }
+.hero-only .hero-description {
+  font-size: .96rem;
+  line-height: 1.68;
+  margin-bottom: 16px;
+}
+.hero-only .hero-actions { margin-bottom: 24px; }
+.hero-only .btn-primary-site,
+.hero-only .btn-secondary-site { font-size: .85rem; padding: 11px 16px; }
+.hero-only .btn-scholar-site { font-size: .83rem; }
+.hero-only .hero-contact { font-size: .83rem; margin-top: 13px; }
+
+/* Research / publications / photos body */
+.page-shell .topic { padding: 25px 0; column-gap: 22px; }
+.page-shell .topic h2 {
+  font-size: clamp(1.38rem, 2.1vw, 1.90rem);
+  margin-bottom: 10px;
+}
+.page-shell .topic p { font-size: .92rem; line-height: 1.6; margin-bottom: 15px; }
+.page-shell .topic-index { font-size: .75rem; }
+.page-shell .chip { font-size: .71rem; padding: 5px 10px; }
+.page-shell .empty-state { padding: clamp(24px, 4vw, 43px); }
+.page-shell .empty-state h2 { font-size: clamp(1.52rem, 2.65vw, 2.1rem); }
+.page-shell .empty-state p { font-size: .92rem; line-height: 1.64; }
+.page-shell .photo-feature figcaption strong { font-size: .87rem; }
+.page-shell .photo-feature figcaption span { font-size: .75rem; }
+
+/* About Me: compact CV-like layout and clear typography hierarchy */
+.about-page .page-hero { padding-bottom: 34px; margin-bottom: 30px; }
+.about-page .page-hero h1 { font-size: clamp(2.4rem, 4.2vw, 3.55rem); }
+.about-page .cv-section {
+  grid-template-columns: 205px minmax(0, 1fr);
+  gap: 30px;
+  padding: 15px 0 25px;
+}
+.about-page .cv-section > h2 {
+  font-size: 1.15rem !important;
+  font-weight: 760 !important;
+  line-height: 1.35;
+  padding-top: 2px;
+}
+.about-page .cv-items .cv-entry { padding-bottom: 15px; }
+.about-page .cv-items .cv-entry + .cv-entry {
+  padding-top: 17px;
+}
+.about-page #education .cv-items .cv-entry + .cv-entry {
+  padding-top: 17px !important;
+}
+.about-page .cv-period {
+  font-size: .73rem;
+  margin-bottom: 6px;
+}
+.about-page .cv-items .cv-entry h3 {
+  font-size: 1.12rem !important;
+  line-height: 1.38;
+  margin-bottom: 4px;
+}
+.about-page .cv-items .cv-entry p {
+  font-size: .90rem;
+  line-height: 1.55;
+  margin-bottom: 4px;
+}
+.about-page .cv-items .cv-entry .cv-note {
+  font-size: .78rem;
+}
+.about-page .presentation-intro {
+  font-size: .86rem;
+  line-height: 1.52;
+  margin-bottom: 13px;
+}
+.about-page .presentation-years .presentation-year > summary {
+  height: 67px;
+  min-height: 67px;
+  max-height: 67px;
+  gap: 12px;
+}
+.about-page .presentation-year-label { font-size: 1.08rem; }
+.about-page .presentation-count { font-size: .72rem; }
+.about-page .presentation-list { padding-bottom: 7px; }
+.about-page .presentation-item { padding: 12px 8px; }
+.about-page .presentation-title {
+  font-size: .90rem;
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
+.about-page .presentation-meta { font-size: .74rem; }
+.about-page .presentation-kind { font-size: .67rem; padding: 2px 8px; }
+.about-page .skill-groups { gap: 17px; }
+.about-page .skill-group-heading {
+  font-size: .74rem !important;
+  margin-bottom: 8px !important;
+}
+.about-page .skill-groups .chips { gap: 7px; }
+.about-page .skill-groups .chip { font-size: .73rem; padding: 6px 10px; }
+.about-page .contact-details { gap: 14px; }
+.about-page .contact-entry a { font-size: .9rem; }
+.about-page .contact-type { font-size: .74rem; }
+.about-page .cv-download {
+  padding: clamp(22px, 3vw, 33px);
+  margin-top: 30px;
+  gap: 24px;
+}
+.about-page .cv-download h2 { font-size: clamp(1.5rem, 2.4vw, 2rem); margin-top: 9px; }
+.about-page .cv-download p { font-size: .89rem; }
+.about-page .cv-unavailable { font-size: .78rem; padding: 11px 14px; }
+@media (max-width: 720px) {
+  .page-shell { padding-top: 45px; padding-bottom: 60px; }
+  .page-hero { padding-bottom: 27px; margin-bottom: 24px; }
+  .page-hero h1 { font-size: clamp(2.12rem, 7.9vw, 2.7rem); }
+  .hero-only .hero { padding-top: 38px; padding-bottom: 50px; }
+  .hero-only .hero h1 { font-size: clamp(2.65rem, 9.3vw, 3.75rem); }
+  .hero-only .hero-description { font-size: .94rem; }
+  .page-shell .topic { padding: 22px 0; }
+  .about-page .page-hero { padding-bottom: 27px; margin-bottom: 24px; }
+  .about-page .page-hero h1 { font-size: clamp(2.12rem, 7.9vw, 2.7rem); }
+  .about-page .cv-section { display: block; padding: 17px 0 23px; }
+  .about-page .cv-section > h2 {
+    font-size: 1.10rem !important;
+    margin-bottom: 14px;
+  }
+  .about-page .presentation-years .presentation-year > summary {
+    height: 63px;
+    min-height: 63px;
+    max-height: 63px;
+  }
+  .about-page .presentation-item { padding: 12px 3px; }
+  .about-page .cv-download { flex-wrap: wrap; }
+}
