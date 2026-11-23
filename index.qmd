@@ -17,7 +17,6 @@ title-block-style: none
       <a class="btn-primary-site" href="research.html">Explore my research <span aria-hidden="true">↗</span></a>
       <a class="btn-secondary-site" href="about.html">About me <span aria-hidden="true">→</span></a>
       <a class="btn-scholar-site" href="https://scholar.google.com/citations?user=w1ew_qMAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" aria-label="Open Eunji Kim's Google Scholar profile (opens in a new tab)">Google Scholar <span aria-hidden="true">↗</span></a>
-      <a class="btn-scholar-site" href="https://orcid.org/0000-0002-2735-9211" target="_blank" rel="noopener noreferrer" aria-label="Open Eunji Kim's ORCID profile (opens in a new tab)">ORCID <span aria-hidden="true">↗</span></a>
         
 </div>
 <p class="hero-contact">Get in touch: <a href="mailto:hahahh@unist.ac.kr">hahahh@unist.ac.kr <span aria-hidden="true">↗</span></a></p>
