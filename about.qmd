@@ -32,7 +32,7 @@ title-block-style: none
   <h2>Visits</h2>
   <div class="cv-items">
     <div class="cv-entry"><span class="cv-period">Feb - Apr 2026</span><h3>Visiting Research Scholar</h3><p>National Center for Atmospheric Research (NCAR)</p><p class="cv-note">Boulder, Colorado, USA</p></div>
-    <div class="cv-entry"><span class="cv-period">Feb 6–10, 2023</span><h3>Academic Visit</h3><p>University of Washington</p><p class="cv-note">Seattle, Washington, USA</p></div>
+    <div class="cv-entry"><span class="cv-period">Feb 6-10, 2023</span><h3>Academic Visit</h3><p>University of Washington</p><p class="cv-note">Seattle, Washington, USA</p></div>
   </div>
 </section>
 <section class="cv-section" id="awards">
@@ -177,7 +177,7 @@ title-block-style: none
         <div class="presentation-meta"><span class="presentation-venue">2021 Korean Meteorological Society Autumn Meeting</span><span class="presentation-kind">Poster</span></div>
       </li>
       <li class="presentation-item">
-        <h3 class="presentation-title" lang="en">Analysis of Long-Term Tropical Cyclone Variability under Detailed SSP Climate Change Scenarios</h3>
+        <h3 class="presentation-title" lang="en">Analysis of Long-Term Tropical Cyclone Variability under SSP Climate Change Scenarios</h3>
         <div class="presentation-meta"><span class="presentation-venue">2021 Korean Society of Climate Change Research Autumn Conference</span><span class="presentation-kind">Oral</span></div>
       </li>
       </ol>
