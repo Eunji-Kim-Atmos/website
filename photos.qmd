@@ -14,7 +14,7 @@ title-block-style: none
     <button class="photo-open" type="button" data-photo-src="images/eunji-photo-original.jpg" aria-label="View Garden of the Gods photograph">
       <img src="images/eunji-photo-original.jpg" alt="Eunji Kim at Garden of the Gods in Colorado Springs" width="2048" height="1535" loading="lazy">
     </button>
-    <figcaption><strong>Garden of the Gods</strong><span>Colorado Springs, USA · Feb 2026</span></figcaption>
+    <figcaption><strong>Garden of the Gods</strong><span>Colorado Springs, CO, USA · Feb 2026</span></figcaption>
   </figure>
   <figure class="photo-feature">
     <button class="photo-open" type="button" data-photo-src="images/first-conference-2019-hq.avif" aria-label="View My First Conference photograph">
