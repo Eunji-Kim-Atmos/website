@@ -29,14 +29,14 @@ title-block-style: none
   </div>
 </section>
 <section class="cv-section" id="academic-visits">
-  <h2>Academic Visits</h2>
+  <h2>Visits</h2>
   <div class="cv-items">
-    <div class="cv-entry"><span class="cv-period">Feb 2026 – Apr 2026</span><h3>Visiting Research Scholar</h3><p>National Center for Atmospheric Research (NCAR)</p><p class="cv-note">Boulder, Colorado, USA</p></div>
+    <div class="cv-entry"><span class="cv-period">Feb - Apr 2026</span><h3>Visiting Research Scholar</h3><p>National Center for Atmospheric Research (NCAR)</p><p class="cv-note">Boulder, Colorado, USA</p></div>
     <div class="cv-entry"><span class="cv-period">Feb 6–10, 2023</span><h3>Academic Visit</h3><p>University of Washington</p><p class="cv-note">Seattle, Washington, USA</p></div>
   </div>
 </section>
 <section class="cv-section" id="awards">
-  <h2>Awards &amp; Honors</h2>
+  <h2>Awards</h2>
   <div class="cv-items">
     <div class="cv-entry award-entry">
       <span class="cv-period">2024</span>
