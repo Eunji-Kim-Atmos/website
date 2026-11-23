@@ -5,6 +5,7 @@ project:
   output-dir: _site
   resources:
     - images/**
+    - files/**
   render:
     - index.qmd
     - about.qmd
